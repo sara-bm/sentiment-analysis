@@ -1,0 +1,26 @@
+Sentiment Analysis Project
+This project provides a multi-model sentiment analysis pipeline that leverages several popular Natural Language Processing (NLP) libraries and models to analyze the sentiment and emotional context of text. It uses NLTK, TextBlob, Flair, and DeepMoji for sentiment classification and emoji-based emotional inference.
+
+Features
+NLTK (Vader): Analyzes text and returns sentiment scores (positive, negative, neutral).
+TextBlob: Provides polarity (sentiment) and subjectivity analysis.
+Flair: Returns a sentence-level sentiment label (positive or negative).
+DeepMoji: Predicts emojis representing the emotional tone of the input text.
+Setup
+Install required libraries:
+
+bash
+Copy code
+pip install -r requirements.txt
+Or install directly:
+
+bash
+Copy code
+pip install nltk textblob flair torch==1.0.1 emoji seaborn
+Run inference on a sample sentence:
+
+bash
+Copy code
+python inference.py
+Usage
+Edit the inference.py file to test different sentences or use the provided analyze_sentiment() function to process your own text.
